@@ -1,0 +1,9 @@
+{
+  "skills": [
+    {
+      "name": "api-doc-generator",
+      "description": "API文档生成器 - 根据Spring Boot Controller自动生成规范的Markdown接口文档",
+      "path": "api-doc-generator.md"
+    }
+  ]
+}
