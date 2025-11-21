@@ -1,0 +1,132 @@
+{
+  "alwaysThinkingEnabled": true,
+
+  "permissions": {
+    "allow": [
+      // ==================== Git 命令 ====================
+      // 安全的查询命令
+      "Bash(git status)",
+      "Bash(git status *)",
+      "Bash(git diff)",
+      "Bash(git diff *)",
+      "Bash(git log)",
+      "Bash(git log *)",
+      "Bash(git branch)",
+      "Bash(git branch *)",
+
+      // 本地修改命令
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git stash *)",
+
+      // ==================== NPM/包管理 ====================
+      "Bash(npm run *)",
+      "Bash(npm test)",
+      "Bash(npm test *)",
+      "Bash(npm run test *)",
+      "Bash(npm run lint *)",
+      "Bash(npm run build *)",
+      "Bash(npm run dev *)",
+      "Bash(npm list *)",
+
+      // ==================== 文件系统命令 ====================
+      "Bash(ls *)",
+      "Bash(dir *)",
+      "Bash(pwd)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(tree *)",
+
+      // ==================== 文件读取 ====================
+      // 允许读取常见代码文件
+      "Read(**/*.js)",
+      "Read(**/*.ts)",
+      "Read(**/*.tsx)",
+      "Read(**/*.jsx)",
+      "Read(**/*.json)",
+      "Read(**/*.md)",
+      "Read(**/*.txt)",
+      "Read(**/*.yml)",
+      "Read(**/*.yaml)",
+      "Read(**/*.xml)",
+      "Read(**/*.html)",
+      "Read(**/*.css)",
+      "Read(**/*.scss)",
+      "Read(**/*.py)",
+      "Read(**/*.java)",
+      "Read(**/*.go)",
+      "Read(**/*.rs)",
+
+      // 允许读取配置文件
+      "Read(.gitignore)",
+      "Read(.eslintrc*)",
+      "Read(.prettierrc*)",
+      "Read(package.json)",
+      "Read(tsconfig.json)",
+      "Read(README*)",
+
+      // 允许读取 Claude Code 配置
+      "Read(**/.claude/**)",
+
+      // ==================== Claude 帮助命令 ====================
+      "Bash(claude help:*)"
+    ],
+
+    "ask": [
+      // ==================== 需要确认的命令 ====================
+      // 网络操作
+      "git push",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git fetch *)",
+
+      // 包安装
+      "Bash(npm install *)",
+      "Bash(npm uninstall *)",
+      "Bash(npm ci *)",
+      "Bash(yarn add *)",
+      "Bash(yarn remove *)",
+      "Bash(pnpm add *)",
+      "Bash(pnpm remove *)",
+
+      // 文件写入
+      "Write(**)",
+      "Edit(**)",
+
+      // 敏感文件读取
+      "Read(**/.env*)",
+      "Read(**/config/**)"
+    ],
+
+    "deny": [
+      // ⚠️ 注意：deny 功能目前有 bug，主要依靠 preToolUse Hook
+      // 这里列出来只是作为第二道防线
+
+      // 危险的删除命令
+      "Bash(rm -rf *)",
+      "Bash(del /s *)",
+      "Bash(rmdir /s *)",
+
+      // 危险的 Git 命令
+      "Bash(git reset --hard *)",
+      "Bash(git push *--force*)",
+      "Bash(git push *-f *)",
+
+      // 危险的网络命令
+      "Bash(curl * | sh)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | sh)",
+      "Bash(wget * | bash)",
+
+      // 敏感文件
+      "Read(**/*.key)",
+      "Read(**/*credentials*)",
+      "Read(**/*secret*)",
+      "Read(**/*password*)",
+      "Write(**/.env*)",
+      "Write(**/*.key)"
+    ]
+  }
+}
