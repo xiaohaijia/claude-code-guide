@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>临终前，人才会承认：这一生最亏的，不是没钱</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            font-size: 17px;
+            line-height: 2.0;
+            letter-spacing: 0.6px;
+            padding: 0 22px;
+            max-width: 640px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .article-wrap { padding: 40px 0 64px; }
+
+        .top-decor {
+            width: 36px;
+            height: 3px;
+            background: linear-gradient(90deg, #8faa8c, #b5ccb0);
+            margin-bottom: 32px;
+            border-radius: 2px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 28px;
+            line-height: 1.5;
+            letter-spacing: 1.5px;
+        }
+
+        .intro-para {
+            color: #5a6e57;
+            font-size: 15px;
+            margin: 0 0 32px;
+            padding: 16px 20px;
+            border-left: 3px solid #9fb7a5;
+            border-radius: 0 8px 8px 0;
+            line-height: 1.9;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 22px;
+            text-align: justify;
+            word-break: break-word;
+            color: #3a3a3a;
+            line-height: 2.0;
+        }
+
+        .section-number {
+            font-size: 38px;
+            font-weight: 800;
+            color: #d8e6d4;
+            margin: 48px 0 6px;
+            line-height: 1;
+            letter-spacing: 1px;
+            font-family: Georgia, serif;
+        }
+
+        .section-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: #2a3828;
+            margin-bottom: 24px;
+            line-height: 1.5;
+            padding-bottom: 12px;
+            border-bottom: 1.5px solid #e2eedf;
+        }
+
+        strong { color: #1e2c1c; font-weight: 600; }
+
+        .emphasize {
+            background: linear-gradient(180deg, transparent 58%, #e2f0dc 58%);
+            font-weight: 500;
+            padding: 0 2px;
+        }
+
+        .insight-card {
+            padding: 20px 0 20px 20px;
+            margin: 32px 0;
+            font-size: 15.5px;
+            color: #3d5040;
+            line-height: 2.2;
+            border-left: 3px solid #9fb7a5;
+        }
+
+        .dream-list {
+            list-style: none;
+            margin: 8px 0 28px;
+            padding-left: 4px;
+        }
+
+        .dream-list li {
+            margin-bottom: 12px;
+            color: #3d4e3b;
+            font-size: 16px;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.8;
+        }
+
+        .dream-list li::before { display: none; }
+
+        .ending-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #8aa881;
+            letter-spacing: 3px;
+            margin: 52px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ending-label::before { content: "◈"; font-size: 11px; color: #b5ccb0; }
+
+        .ending-label::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, #daebd5, transparent);
+        }
+
+        .closing-card {
+            margin: 48px 0 0;
+            padding: 40px 0 36px;
+            text-align: center;
+            border-top: 1px solid #e2eedf;
+        }
+
+        .closing-deco {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .closing-deco span { display: block; width: 24px; height: 1px; background: #b8d0b4; }
+
+        .closing-deco i { font-style: normal; font-size: 11px; color: #b8d0b4; letter-spacing: 3px; }
+
+        .closing-main {
+            font-size: 16px;
+            color: #4a5e46;
+            line-height: 2.5;
+            margin-bottom: 28px;
+        }
+
+        .closing-main .gap { display: block; height: 6px; }
+
+        .closing-card .final-word {
+            font-size: 17px;
+            font-weight: 700;
+            color: #2a3828;
+            letter-spacing: 1.5px;
+            display: inline-block;
+            border-bottom: 2px solid #9fb7a5;
+        }
+
+        .divider-deco {
+            text-align: center;
+            margin: 36px 0 28px;
+            color: #a0b89c;
+            letter-spacing: 4px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .divider-deco::before,
+        .divider-deco::after {
+            content: "";
+            width: 28px;
+            height: 1px;
+            background: #ccdec8;
+        }
+
+        @media (max-width: 480px) {
+            body { font-size: 16px; padding: 0 18px; }
+            h1 { font-size: 22px; }
+            .section-number { font-size: 32px; }
+            .section-title { font-size: 17px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="article-wrap">
+
+        <div class="top-decor"></div>
+
+        <h1>临终前，人才会承认：<br>这一生最亏的，不是没钱</h1>
+
+        <div class="intro-para">
+            很多人以为，人生最大的遗憾，是没赚到很多钱，没买上大房子，没混出个名堂。可真正走到生命尽头的人，回头看自己这一生，最放不下的，往往不是这些。
+        </div>
+
+        <p>一名澳大利亚护士，曾照顾过许多生命只剩最后几周的病人。她听过太多临终前的叹息。那些人年轻时也拼过、忍过、熬过，也以为日子还长，以为以后还有机会。</p>
+        <p>可到了最后，他们才发现：<strong>人生最可怕的，不是失败。而是你一直活成了别人满意的样子，却把自己弄丢了。</strong></p>
+
+        <div class="section-number">01</div>
+        <div class="section-title">我希望，自己当初有勇气过想要的生活</div>
+        <p>人这一生，最容易走着走着，就走进了别人的剧本里。</p>
+        <p>父母希望你稳定。亲戚希望你体面。朋友希望你合群。社会希望你成功。于是你不敢辞掉不喜欢的工作，不敢拒绝不舒服的关系，不敢选择真正想走的路。你怕别人失望，怕别人议论，怕自己失败。</p>
+        <p>可到最后才明白：<span class="emphasize">那些评价你的人，并不会替你过完这一生。</span>你委屈自己换来的"懂事"，最后可能只剩一句："如果当初，我勇敢一点就好了。"</p>
+        <p>很多人不是没有梦想。只是太早学会了压抑自己。</p>
+
+        <div class="section-number">02</div>
+        <div class="section-title">我真希望，自己当初没那么拼命工作</div>
+        <p>年轻时，我们总觉得：再忙几年就好了。等赚够钱就好了。等事业稳定就好了。等孩子大了就好了。</p>
+        <p>可人生最残酷的地方就在于，很多事情，等着等着，就没了。孩子的童年不会等你。父母的健康不会等你。爱人的耐心不会等你。自己的身体也不会等你。</p>
+        <p>你拼命加班，拼命赚钱，拼命证明自己，最后却可能发现：钱是多了一点，可生活被你弄丢了。</p>
+
+        <div class="insight-card">
+            人不是机器。<br>
+            别把身体熬坏了，才想起养生；<br>
+            别把家人冷落了，才想起陪伴；<br>
+            别把日子过成一张任务清单，<br>
+            才想起自己也曾经想好好活着。
+        </div>
+
+        <p>工作很重要。<strong>但它不该吞掉你整个人生。</strong></p>
+
+        <div class="section-number">03</div>
+        <div class="section-title">我希望，当初有勇气说出真实感受</div>
+        <p>很多人一辈子都在忍。明明受了委屈，却说"没事"。明明很在乎，却装作无所谓。明明想被理解，却硬撑着不说。明明想挽留，却等对方先开口。</p>
+        <p>我们总怕表达感受会显得脆弱，怕说出真心会被拒绝，怕关系因此变得尴尬。于是很多话，就这样憋了一辈子。</p>
+        <p>可人到最后才懂：那些没说出口的爱，可能再也没有机会说。那些没解释清楚的误会，可能再也没有机会解开。那些想道歉、想感谢、想拥抱的人，可能某一天就真的见不到了。</p>
+
+        <div class="insight-card">
+            人生太短了。<br>
+            喜欢就表达，难过就说出来，<br>
+            想念就联系，爱就别藏着。<br>
+            别让沉默，变成一生的遗憾。
+        </div>
+
+        <div class="section-number">04</div>
+        <div class="section-title">我希望，当初能和朋友们保持联系</div>
+        <p>小时候总觉得，朋友会一直在。后来才发现，人和人之间，真的会走散。不是因为吵架。也不是因为谁变坏了。只是一次没回消息，一次没约出来，一次说"下次吧"，然后就真的没有下次了。</p>
+        <p>年轻时忙工作，忙家庭，忙生活，总觉得朋友可以以后再联系。可到最后才发现：人生里很多温暖，其实都藏在那些老朋友身上。他们见过你最青涩的样子，知道你曾经的梦想，懂你没说出口的难处。</p>
+        <p>有些关系，一旦断了，就很难再接上。<span class="emphasize">所以，别总等有空。想起谁，就发条消息。别怕打扰。</span>很多感情，不是突然没了，而是慢慢凉了。</p>
+
+        <div class="section-number">05</div>
+        <div class="section-title">我希望，当初能让自己更快乐一点</div>
+        <p>很多人一生都在追求"应该"。应该努力。应该懂事。应该成功。应该顾全大局。应该让别人满意。可偏偏忘了问自己一句："我快乐吗？"</p>
+        <p>我们总以为，快乐是一件很奢侈的事，要等有钱了、成功了、退休了，才配拥有。可真正到了生命尽头的人才明白：<strong>快乐不是人生最后的奖品。快乐本来就应该在生活里。</strong></p>
+
+        <ul class="dream-list">
+            <li>🌿 一顿好好吃的饭</li>
+            <li>🌿 一次没有负担的散步</li>
+            <li>🌿 和喜欢的人聊聊天</li>
+            <li>🌿 做一件自己真正喜欢的小事</li>
+        </ul>
+
+        <p>这些看似不起眼的瞬间，才是人生真正的底色。别总把快乐往后放。因为很多时候，后来真的没有后来。</p>
+
+        <div class="ending-label">写在最后</div>
+        <p>临终前的五大遗憾，其实都在提醒我们一件事：<strong>别等人生快结束了，才开始后悔自己没有真正活过。</strong></p>
+        <p>不要总是为了别人眼中的"正确"，牺牲自己心里的热爱。不要总是为了所谓的成功，把身体、家人、朋友和快乐都放到最后。也不要总觉得时间还多。</p>
+        <p>人生不是无限续杯。有些人，见一面少一面。有些事，拖着拖着就错过了。有些话，现在不说，以后可能就没机会了。</p>
+        <p>所以，从今天开始，稍微对自己诚实一点。想做的事，慢慢去做。想见的人，早点去见。想说的话，别再憋着。想过的生活，别一直等。</p>
+
+        <div class="closing-card">
+            <div class="closing-deco">
+                <span></span><i>写 给 你</i><span></span>
+            </div>
+            <div class="closing-main">
+                人这一辈子，真正的成功，<br>
+                不是活成别人羡慕的样子。
+                <span class="gap"></span>
+                而是到最后回头看时，<br>
+                能轻轻地对自己说一句：
+            </div>
+            <div class="final-word">"这一生，我没有太亏待自己。"</div>
+        </div>
+
+        <div class="divider-deco">· 谢谢你看到这里 ·</div>
+
+    </div>
+</body>
+</html>
